@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="GGJ-2018-JOYCONS"
-run/main_scene="res://Scenes/part1.tscn"
+run/main_scene="res://levels/part2.tscn"
 config/icon="res://icon.png"
 
 [display]
