@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/lead.wav-14a42ae93b0780263fe91d389138ffdb.sample"
+
+[deps]
+
+source_file="res://Sounds/lead.wav"
+source_md5="e76f5af0c82d1a82faa891ba93176b99"
+
+dest_files=[ "res://.import/lead.wav-14a42ae93b0780263fe91d389138ffdb.sample" ]
+dest_md5="7b6f051015b562c3bbe27841b439d2c8"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=true
+compress/mode=0

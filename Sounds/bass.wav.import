@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/bass.wav-4b296e82fec52c47cc8b76c542992a1e.sample"
+
+[deps]
+
+source_file="res://Sounds/bass.wav"
+source_md5="a7de7e0cb3daa40f8c8c2f2ed846fb96"
+
+dest_files=[ "res://.import/bass.wav-4b296e82fec52c47cc8b76c542992a1e.sample" ]
+dest_md5="1e88a54a0225384b7f088db2fc2dea60"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=true
+compress/mode=0
