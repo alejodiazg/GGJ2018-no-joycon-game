@@ -1,18 +1,22 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://levels/level.gd" type="Script" id=1]
-[ext_resource path="res://sounds/static.wav" type="AudioStream" id=2]
-[ext_resource path="res://levels/positions/position_helper.tscn" type="PackedScene" id=3]
-[ext_resource path="res://player/player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://levels/game_field/game_field.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Sounds/part1.3.wav" type="AudioStream" id=2]
+[ext_resource path="res://Sounds/part2.1.wav" type="AudioStream" id=3]
+[ext_resource path="res://Sounds/part2.2.wav" type="AudioStream" id=4]
+[ext_resource path="res://Sounds/part2.3.wav" type="AudioStream" id=5]
+[ext_resource path="res://Sounds/static.wav" type="AudioStream" id=6]
+[ext_resource path="res://levels/positions/position_helper.tscn" type="PackedScene" id=7]
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=8]
+[ext_resource path="res://levels/game_field/game_field.tscn" type="PackedScene" id=9]
 
-[node name="Level" type="Node"]
+[node name="Level" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
 [node name="Base" type="AudioStreamPlayer" parent="." index="0"]
 
-stream = null
+stream = ExtResource( 2 )
 volume_db = 0.0
 autoplay = true
 mix_target = 0
@@ -20,7 +24,7 @@ bus = "Base"
 
 [node name="Add1" type="AudioStreamPlayer" parent="." index="1"]
 
-stream = null
+stream = ExtResource( 3 )
 volume_db = 0.0
 autoplay = true
 mix_target = 0
@@ -28,7 +32,7 @@ bus = "Add1"
 
 [node name="Add2" type="AudioStreamPlayer" parent="." index="2"]
 
-stream = null
+stream = ExtResource( 4 )
 volume_db = 0.0
 autoplay = true
 mix_target = 0
@@ -36,7 +40,7 @@ bus = "Add2"
 
 [node name="Add3" type="AudioStreamPlayer" parent="." index="3"]
 
-stream = null
+stream = ExtResource( 5 )
 volume_db = 0.0
 autoplay = true
 mix_target = 0
@@ -44,20 +48,20 @@ bus = "Add3"
 
 [node name="Static" type="AudioStreamPlayer" parent="." index="4"]
 
-stream = ExtResource( 2 )
+stream = ExtResource( 6 )
 volume_db = 6.0
 autoplay = true
 mix_target = 0
 bus = "Static"
 
-[node name="Positions" parent="." index="5" instance=ExtResource( 3 )]
+[node name="Positions" parent="." index="5" instance=ExtResource( 7 )]
 
-[node name="Player" parent="." index="6" instance=ExtResource( 4 )]
+[node name="Player" parent="." index="6" instance=ExtResource( 8 )]
 
 editor/display_folded = true
 position = Vector2( 960, 540 )
 
-[node name="Game Field" parent="." index="7" instance=ExtResource( 5 )]
+[node name="Game Field" parent="." index="7" instance=ExtResource( 9 )]
 
 editor/display_folded = true
 

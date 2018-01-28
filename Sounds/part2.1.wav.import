@@ -2,14 +2,14 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/part2.1.wav-f4aa55a87ea6c0662ab0f45be011d590.sample"
+path="res://.import/part2.1.wav-e16a5a6134c48c36680e761be7ef65bf.sample"
 
 [deps]
 
-source_file="res://sounds/part2.1.wav"
+source_file="res://Sounds/part2.1.wav"
 source_md5="070097a55aaa0dd6273f278e8e336f1a"
 
-dest_files=[ "res://.import/part2.1.wav-f4aa55a87ea6c0662ab0f45be011d590.sample" ]
+dest_files=[ "res://.import/part2.1.wav-e16a5a6134c48c36680e761be7ef65bf.sample" ]
 dest_md5="3ead0fc2149c6a0dc4a836c89e6cb8e0"
 
 [params]
