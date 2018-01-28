@@ -12,3 +12,4 @@ func _ready():
 
 func launch_end_level():
 	print("Level ended finally!!!!!")
+	get_parent().next_lvl_timer()

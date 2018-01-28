@@ -10,9 +10,10 @@
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://levels/game_field/game_field.tscn" type="PackedScene" id=9]
 
-[node name="Level" type="Node" index="0"]
+[node name="Level" type="Node"]
 
 script = ExtResource( 1 )
+next_lvl = "part1.tscn"
 
 [node name="Base" type="AudioStreamPlayer" parent="." index="0"]
 
@@ -64,6 +65,15 @@ position = Vector2( 960, 540 )
 [node name="Game Field" parent="." index="7" instance=ExtResource( 9 )]
 
 editor/display_folded = true
+
+[node name="Timer" type="Timer" parent="." index="8"]
+
+process_mode = 1
+wait_time = 5.0
+one_shot = true
+autostart = false
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
 
 [editable path="Player"]
